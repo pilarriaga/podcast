@@ -13,7 +13,7 @@
         <div>
             <img src="./landingUI_desktop_mobile_kit/landingUI_desktop_mobile_kit/assets/logo.svg" alt="logo">
         </div>
-        <nav>
+        <nav class="menudesktop">
             <ul class="menud">
                 <li><a href="#episodios">EPISODIOS</a></li>
                 <li><a href="#nosotros" >NOSOTROS</a></li>
@@ -21,20 +21,22 @@
                 <li><a href="#topicos">TOPICOS</a></li>
             </ul>
         </nav>
-        <nav class="menu-mobile">
-            <input type="checkbox" id="menu-hamburguesa"/>
-            <label for="menu-hamburguesa">
-                <div class="lineatop"></div>
-                <div class="lineamiddle"></div>
-                <div class="lineabottom"></div>
+        <div class="menu-mobile">
+            <input type="checkbox" id="menu-hamburguesa" class="custom-check"/>
+            <label for="menu-hamburguesa" class="label-burger">
+                <span class="linea top"></span>
+                <span class="linea middle"></span>
+                <span class="linea bottom"></span>
             </label>
-            <ul>
-                <li><a href="#episodios">EPISODIOS</a></li>
-                <li><a href="#nosotros" >NOSOTROS</a></li>
-                <li><a href="#entrevista">ENTREVISTAS</a></li>
-                <li><a href="#topicos">TOPICOS</a></li>
-            </ul>
-        </nav>
+            <nav class="mobileul">
+                <ul>
+                    <li><a href="#episodios">EPISODIOS</a></li>
+                    <li><a href="#nosotros" >NOSOTROS</a></li>
+                    <li><a href="#entrevista">ENTREVISTAS</a></li>
+                    <li><a href="#topicos">TOPICOS</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <div class="hello">
@@ -43,11 +45,13 @@
                 <div>    
                     <p class="pe1">El portal de podcasts que explora el mundo de la programación y
                     la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
-                    <p class="pe11">Un podcast que explora el mundo de la programación.
+                    <p class="pe1m">Un podcast que explora el mundo de la programación.
                         Nuevos episodios, todos los jueves cada 15 días.</p>
                 </div>
             </div>
-            <button class="cmas">CONOCÉ MÁS</button>
+            <div class="boton cmas">
+                <a href="#nosotros">CONOCÉ MÁS</a>
+            </div>
         </div>
         <section id="episodios" class="epis">
             <h2>Episodios</h2>
@@ -89,7 +93,7 @@
                 <img src="./landingUI_desktop_mobile_kit/landingUI_desktop_mobile_kit/assets/Katie-Bouman.png" alt="imagen-Katie-Bouman">
                 <img src="./landingUI_desktop_mobile_kit/landingUI_desktop_mobile_kit/assets/Margaret_Hamilton.png" alt="imagen-Margaret_Hamilton">
                 <img src="./landingUI_desktop_mobile_kit/landingUI_desktop_mobile_kit/assets/An-E.R.A.Univac-1103-computer-in-the-1950s.png" alt="imagen-computer-in-the-1950">
-                <img src="./landingUI_desktop_mobile_kit/landingUI_desktop_mobile_kit/assets/Computer-operators-with-an-Eniac-the-world’s-first-programmable-general-purpose-computer.png" alt="imagen-first-programmable-computer">
+                <img src="./landingUI_desktop_mobile_kit/landingUI_desktop_mobile_kit/assets/Computer-operators-with-an-Eniac-the-worlds-first-programmable-general-purpose-computer.png" alt="imagen-first-programmable-computer">
                 <img src="./landingUI_desktop_mobile_kit/landingUI_desktop_mobile_kit/assets/susan-kare.png" alt="imagen-susan-kare">
             </div>
         </section>
@@ -116,19 +120,19 @@
         </section>
         <section id="novedades" class="novedades">
             <h2>¿Querés las últimas novedades?</h2>
-            <div class="escucha">
+            <div class="boton escucha">
                 <a href="#episodios">ESCUCHÁ LOS EPISODIOS</a>
             </div>
         </section>
     </main>
     <footer>
-        <p class="copyright"><i class="far fa-copyright"></i> 2019- Hello blue pale dot</p>
+        <p class="copyright">© 2019- Hello blue pale dot</p>
         <div>
-            <i class="fab fa-spotify"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-telegram"></i>
+            <a target="_blank" href="https://www.spotify.com/es/home/"><i class="fab fa-spotify"></i></a>
+            <a target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a target="_blank" href="https://twitter.com/home?lang=es"><i class="fab fa-twitter"></i></a>
+            <a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a target="_blank" href="https://web.telegram.org/#/im"><i class="fab fa-telegram"></i></a>
         </div>
     </footer>
 </body>
