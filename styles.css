@@ -335,7 +335,7 @@ footer a:hover {
     }
 
     .mobileul {
-        position: absolute;
+        position: fixed;
         width: 100%;
         top: 44px;
         left: 0px;
@@ -374,16 +374,16 @@ footer a:hover {
     }
 
     .linea {
-        width: 18px;
-        height: 2px;
-        background-color: #000;
+        width: 20px;
+        height: 4px;
+        background-color: #060A24;
         margin-bottom: 3px;
         transition: all 1s ease;
         transform-origin: left;
     }
 
     #menu-hamburguesa:checked + label .top {
-        transform: rotate(35deg);
+        transform: rotate(45deg);
     }
 
     #menu-hamburguesa:checked + label .middle {
@@ -391,7 +391,7 @@ footer a:hover {
     }
 
     #menu-hamburguesa:checked + label .bottom {
-        transform: rotate(-35deg);
+        transform: rotate(-45deg);
     }
 
     #menu-hamburguesa:checked ~ .mobileul {
@@ -441,11 +441,11 @@ footer a:hover {
     .epis {
         height: 1203.5px;
         padding: 0 3.4%;
-        clip-path: polygon(0 2%, 100% 0%, 100% 98%, 0 100%);
+        clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0 100%);
     }
 
     .epis h2 {
-        padding: 54px 1.6% 21px;
+        padding: 64px 1.6% 21px;
     }
 
     .spo {
@@ -544,7 +544,7 @@ footer a:hover {
 
     footer div {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 100%;
     }
 }
